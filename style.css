@@ -1,15 +1,15 @@
 body{
-    background-color: rgb(55, 52, 105);
+    background-color: rgb(255, 255, 255);
 }
 
 p{
-    color: rgb(192, 172, 143);
+    color: rgb(0, 0, 0);
 }
 
 .kaio{
-    color: burlywood;
+    color: rgb(0, 0, 0);
      font-style: initial;
 }
 h1{
-    color: rgb(192, 172, 143);
+    color: rgb(0, 0, 0);
 }
