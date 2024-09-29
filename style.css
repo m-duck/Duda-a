@@ -2,4 +2,5 @@ body{
     background-color: darkgrey;
     display: flex;
     justify-content: center;
+    font-style: normal;
 }
