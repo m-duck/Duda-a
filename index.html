@@ -51,12 +51,12 @@
             width: 200px;
             text-align: center;
         }
-        .pokemon-card img, .gym-card img {
+        .pokemon-card img, .gym-card img .logo{
             width: 40%;
             height: auto;
             transition: transform 0.2s; /* Suaviza a transição */
         }
-        .pokemon-card img:hover, .gym-card img:hover {
+        .pokemon-card img:hover, .gym-card img:hover .logo{
             transform: scale(2.1); /* Aumenta a imagem para 110% do tamanho original */
         }
         footer {
@@ -70,7 +70,7 @@
 </head>
 <body>
     <header>
-        <img src="pokemon.png" alt="Pokémon Emerald Logo" width="25%">
+        <img class="logo" scr="pokemon.png" alt="Pokémon Emerald Logo" width="25%">
         <nav>
             <ul>
                 <li><a href="#pokemons">Pokémons</a></li>
