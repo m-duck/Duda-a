@@ -33,12 +33,15 @@
         main {
             padding: 20px;
         }
-        .pokemon-list {
+        h2 {
+            color: #0070bb;
+        }
+        .pokemon-list, .gym-list {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
         }
-        .pokemon-card {
+        .pokemon-card, .gym-card {
             background: white;
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -47,26 +50,17 @@
             padding: 10px;
             width: 200px;
             text-align: center;
+        }
+        .pokemon-card img, .gym-card img {
+            width: 100%;
+            height: auto;
         }
         footer {
             text-align: center;
             margin-top: 20px;
-        }
-        .gym-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-        .gym-card {
-            background: white;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-            margin: 10px;
-            padding: 10px;
-            width: 200px;
-            text-align: center;
+            background-color: #0070bb;
+            color: white;
+            padding: 10px 0;
         }
     </style>
 </head>
@@ -79,7 +73,6 @@
                 <li><a href="#trio-lendario">Trio Lendário</a></li>
                 <li><a href="#ginasios">Ginásios</a></li>
                 <li><a href="#curiosidades">Curiosidades</a></li>
-                <li><a href="#sobre">Sobre</a></li>
             </ul>
         </nav>
     </header>
@@ -88,7 +81,6 @@
         <section id="pokemons">
             <h2>Pokémons</h2>
             <div class="pokemon-list">
-                <!-- Pokémon Cards (adicionar mais aqui) -->
                 <div class="pokemon-card">
                     <img src="https://archives.bulbagarden.net/media/upload/thumb/a/a3/252Treecko.png/250px-252Treecko.png" alt="Treecko">
                     <h3>Treecko</h3>
@@ -96,97 +88,89 @@
                     <p>Altura: 0.5m</p>
                     <p>Peso: 5.0kg</p>
                 </div>
-                <!-- Continue com os outros Pokémon... -->
-            </div>
-        </section>
-
-        <section id="trio-lendario">
-            <h2>Trio Lendário</h2>
-            <div class="pokemon-list">
                 <div class="pokemon-card">
-                    <img src="https://archives.bulbagarden.net/media/upload/thumb/a/a7/383Groudon.png/250px-383Groudon.png" alt="Groudon">
-                    <h3>Groudon</h3>
-                    <p>Tipo: Terra</p>
-                    <p>Altura: 3.5m</p>
-                    <p>Peso: 950.0kg</p>
+                    <img src="https://archives.bulbagarden.net/media/upload/thumb/8/8e/253Grovyle.png/250px-253Grovyle.png" alt="Grovyle">
+                    <h3>Grovyle</h3>
+                    <p>Tipo: Grama</p>
+                    <p>Altura: 0.9m</p>
+                    <p>Peso: 21.6kg</p>
                 </div>
                 <div class="pokemon-card">
-                    <img src="https://archives.bulbagarden.net/media/upload/thumb/e/e1/382Kyogre.png/250px-382Kyogre.png" alt="Kyogre">
-                    <h3>Kyogre</h3>
-                    <p>Tipo: Água</p>
-                    <p>Altura: 4.5m</p>
-                    <p>Peso: 352.0kg</p>
+                    <img src="https://archives.bulbagarden.net/media/upload/thumb/d/d1/254Sceptile.png/250px-254Sceptile.png" alt="Sceptile">
+                    <h3>Sceptile</h3>
+                    <p>Tipo: Grama</p>
+                    <p>Altura: 1.7m</p>
+                    <p>Peso: 52.2kg</p>
                 </div>
                 <div class="pokemon-card">
-                    <img src="https://archives.bulbagarden.net/media/upload/thumb/3/3e/384Rayquaza.png/250px-384Rayquaza.png" alt="Rayquaza">
-                    <h3>Rayquaza</h3>
-                    <p>Tipo: Dragão/Voador</p>
-                    <p>Altura: 7.0m</p>
-                    <p>Peso: 206.5kg</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="ginasios">
-            <h2>Ginásios</h2>
-            <div class="gym-list">
-                <div class="gym-card">
-                    <img src="https://www.pokewiki.de/images/d/d6/Emerald_Gym_Leader_Roxanne.png" alt="Roxanne">
-                    <h3>Roxanne</h3>
-                    <p>Tipo: Pedra</p>
-                </div>
-                <div class="gym-card">
-                    <img src="https://www.pokewiki.de/images/3/34/Emerald_Gym_Leader_Brawly.png" alt="Brawly">
-                    <h3>Brawly</h3>
-                    <p>Tipo: Lutador</p>
-                </div>
-                <div class="gym-card">
-                    <img src="https://www.pokewiki.de/images/1/1b/Emerald_Gym_Leader_Wattson.png" alt="Wattson">
-                    <h3>Wattson</h3>
-                    <p>Tipo: Elétrico</p>
-                </div>
-                <div class="gym-card">
-                    <img src="https://www.pokewiki.de/images/b/b1/Emerald_Gym_Leader_Flannery.png" alt="Flannery">
-                    <h3>Flannery</h3>
+                    <img src="https://archives.bulbagarden.net/media/upload/thumb/1/15/255Torchic.png/250px-255Torchic.png" alt="Torchic">
+                    <h3>Torchic</h3>
                     <p>Tipo: Fogo</p>
+                    <p>Altura: 0.4m</p>
+                    <p>Peso: 2.5kg</p>
                 </div>
-                <div class="gym-card">
-                    <img src="https://www.pokewiki.de/images/a/a7/Emerald_Gym_Leader_Norman.png" alt="Norman">
-                    <h3>Norman</h3>
-                    <p>Tipo: Normal</p>
+                <div class="pokemon-card">
+                    <img src="https://archives.bulbagarden.net/media/upload/thumb/5/52/256Combusken.png/250px-256Combusken.png" alt="Combusken">
+                    <h3>Combusken</h3>
+                    <p>Tipo: Fogo/Lutador</p>
+                    <p>Altura: 0.9m</p>
+                    <p>Peso: 19.5kg</p>
                 </div>
-                <div class="gym-card">
-                    <img src="https://www.pokewiki.de/images/4/4d/Emerald_Gym_Leader_Crystal.png" alt="Crystal">
-                    <h3>Crystal</h3>
+                <div class="pokemon-card">
+                    <img src="https://archives.bulbagarden.net/media/upload/thumb/6/68/257Blaziken.png/250px-257Blaziken.png" alt="Blaziken">
+                    <h3>Blaziken</h3>
+                    <p>Tipo: Fogo/Lutador</p>
+                    <p>Altura: 1.9m</p>
+                    <p>Peso: 52.0kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="https://archives.bulbagarden.net/media/upload/thumb/0/0c/258Mudkip.png/250px-258Mudkip.png" alt="Mudkip">
+                    <h3>Mudkip</h3>
                     <p>Tipo: Água</p>
+                    <p>Altura: 0.4m</p>
+                    <p>Peso: 7.6kg</p>
                 </div>
-                <div class="gym-card">
-                    <img src="https://www.pokewiki.de/images/3/3b/Emerald_Gym_Leader_Tate_and_Liza.png" alt="Tate e Liza">
-                    <h3>Tate e Liza</h3>
-                    <p>Tipo: Psíquico</p>
+                <div class="pokemon-card">
+                    <img src="https://archives.bulbagarden.net/media/upload/thumb/a/a6/259Marshtomp.png/250px-259Marshtomp.png" alt="Marshtomp">
+                    <h3>Marshtomp</h3>
+                    <p>Tipo: Água/Terra</p>
+                    <p>Altura: 0.8m</p>
+                    <p>Peso: 24.0kg</p>
                 </div>
-                <div class="gym-card">
-                    <img src="https://www.pokewiki.de/images/b/b0/Emerald_Gym_Leader_Drake.png" alt="Drake">
-                    <h3>Drake</h3>
-                    <p>Tipo: Dragão</p>
+                <div class="pokemon-card">
+                    <img src="https://archives.bulbagarden.net/media/upload/thumb/3/3c/260Swampert.png/250px-260Swampert.png" alt="Swampert">
+                    <h3>Swampert</h3>
+                    <p>Tipo: Água/Terra</p>
+                    <p>Altura: 1.5m</p>
+                    <p>Peso: 81.9kg</p>
                 </div>
-            </div>
-        </section>
-
-        <section id="curiosidades">
-            <h2>Curiosidades</h2>
-            <ul>
-                <li>Pokémon Emerald é a versão definitiva dos jogos de Hoenn, adicionando elementos do anime.</li>
-                <li>O jogo introduz a Battle Frontier, uma nova área para batalhas desafiadoras.</li>
-                <li>Rayquaza pode ser encontrado na Sky Pillar, um local icônico do jogo.</li>
-                <li>O jogo é conhecido por seu enredo envolvente e gráficos melhorados em comparação a Ruby e Sapphire.</li>
-                <li>Groudon e Kyogre são representações dos elementos Terra e Água, respectivamente.</li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Pokémon Emerald</p>
-    </footer>
-</body>
-</html>
+                <div class="pokemon-card">
+                    <img src="https://archives.bulbagarden.net/media/upload/thumb/6/67/261Poochyena.png/250px-261Poochyena.png" alt="Poochyena">
+                    <h3>Poochyena</h3>
+                    <p>Tipo: Sombrio</p>
+                    <p>Altura: 0.5m</p>
+                    <p>Peso: 13.6kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="https://archives.bulbagarden.net/media/upload/thumb/a/a2/262Mightyena.png/250px-262Mightyena.png" alt="Mightyena">
+                    <h3>Mightyena</h3>
+                    <p>Tipo: Sombrio</p>
+                    <p>Altura: 1.0m</p>
+                    <p>Peso: 37.0kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="https://archives.bulbagarden.net/media/upload/thumb/5/53/263Zigzagoon.png/250px-263Zigzagoon.png" alt="Zigzagoon">
+                    <h3>Zigzagoon</h3>
+                    <p>Tipo: Normal</p>
+                    <p>Altura: 0.4m</p>
+                    <p>Peso: 17.0kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="https://archives.bulbagarden.net/media/upload/thumb/7/73/264Linoone.png/250px-264Linoone.png" alt="Linoone">
+                    <h3>Linoone</h3>
+                    <p>Tipo: Normal</p>
+                    <p>Altura: 1.3m</p>
+                    <p>Peso: 32.5kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="https://archives
