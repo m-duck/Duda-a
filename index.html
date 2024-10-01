@@ -1,5 +1,82 @@
-
-
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Emerald</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0070bb;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        h2 {
+            color: #0070bb;
+        }
+        .pokemon-list, .gym-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .pokemon-card, .gym-card {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .pokemon-card img, .gym-card img {
+            width: 100%;
+            height: auto;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            background-color: #0070bb;
+            color: white;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="pokemon.png" alt="Pokémon Emerald Logo" width="25%">
+        <nav>
+            <ul>
+                <li><a href="#pokemons">Pokémons</a></li>
+                <li><a href="#trio-lendario">Trio Lendário</a></li>
+                <li><a href="#ginasios">Ginásios</a></li>
+                <li><a href="#curiosidades">Curiosidades</a></li>
+                <li><a href="#sinopse">Sinopse</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section id="pokemons">
             <h2>Pokémons</h2>
