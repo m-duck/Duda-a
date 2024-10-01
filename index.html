@@ -5,17 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokémon Emerald</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0070bb;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        .pokemon-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .pokemon-card {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .gym-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .gym-card {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <img src="https://upload.wikimedia.org/wikipedia/pt/e/e5/Pokémon_Emerald_logo.png" alt="Pokémon Emerald Logo">
+        <img src="https://upload.wikimedia.org/wikipedia/pt/e/e5/Pokémon_Emerald_logo.png" alt="Pokémon Emerald Logo" width="300">
         <nav>
             <ul>
                 <li><a href="#pokemons">Pokémons</a></li>
                 <li><a href="#trio-lendario">Trio Lendário</a></li>
-                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#ginasios">Ginásios</a></li>
                 <li><a href="#curiosidades">Curiosidades</a></li>
-                <li><a href="#ginasios">Ginasios</a></li>
+                <li><a href="#sobre">Sobre</a></li>
             </ul>
         </nav>
     </header>
@@ -24,50 +88,37 @@
         <section id="pokemons">
             <h2>Pokémons</h2>
             <div class="pokemon-list">
+                <!-- Pokémon Cards (adicionar mais aqui) -->
                 <div class="pokemon-card">
-                    <img src="https://img.pokemondb.net/sprites/home/normal/treecko.png" alt="Treecko">
+                    <img src="https://archives.bulbagarden.net/media/upload/thumb/a/a3/252Treecko.png/250px-252Treecko.png" alt="Treecko">
                     <h3>Treecko</h3>
                     <p>Tipo: Grama</p>
                     <p>Altura: 0.5m</p>
                     <p>Peso: 5.0kg</p>
                 </div>
-                <div class="pokemon-card">
-                    <img src="https://img.pokemondb.net/sprites/home/normal/grovyle.png" alt="Grovyle">
-                    <h3>Grovyle</h3>
-                    <p>Tipo: Grama</p>
-                    <p>Altura: 1.7m</p>
-                    <p>Peso: 21.6kg</p>
-                </div>
-                <div class="pokemon-card">
-                    <img src="https://img.pokemondb.net/sprites/home/normal/sceptile.png" alt="Sceptile">
-                    <h3>Sceptile</h3>
-                    <p>Tipo: Grama</p>
-                    <p>Altura: 1.7m</p>
-                    <p>Peso: 52.2kg</p>
-                </div>
-                <!-- Adicione os outros Pokémon aqui -->
+                <!-- Continue com os outros Pokémon... -->
             </div>
         </section>
 
         <section id="trio-lendario">
             <h2>Trio Lendário</h2>
-            <div class="legendary-list">
+            <div class="pokemon-list">
                 <div class="pokemon-card">
-                    <img src="https://img.pokemondb.net/sprites/home/normal/groudon.png" alt="Groudon">
+                    <img src="https://archives.bulbagarden.net/media/upload/thumb/a/a7/383Groudon.png/250px-383Groudon.png" alt="Groudon">
                     <h3>Groudon</h3>
                     <p>Tipo: Terra</p>
                     <p>Altura: 3.5m</p>
                     <p>Peso: 950.0kg</p>
                 </div>
                 <div class="pokemon-card">
-                    <img src="https://img.pokemondb.net/sprites/home/normal/kyogre.png" alt="Kyogre">
+                    <img src="https://archives.bulbagarden.net/media/upload/thumb/e/e1/382Kyogre.png/250px-382Kyogre.png" alt="Kyogre">
                     <h3>Kyogre</h3>
                     <p>Tipo: Água</p>
                     <p>Altura: 4.5m</p>
                     <p>Peso: 352.0kg</p>
                 </div>
                 <div class="pokemon-card">
-                    <img src="https://img.pokemondb.net/sprites/home/normal/rayquaza.png" alt="Rayquaza">
+                    <img src="https://archives.bulbagarden.net/media/upload/thumb/3/3e/384Rayquaza.png/250px-384Rayquaza.png" alt="Rayquaza">
                     <h3>Rayquaza</h3>
                     <p>Tipo: Dragão/Voador</p>
                     <p>Altura: 7.0m</p>
@@ -76,61 +127,66 @@
             </div>
         </section>
 
-        <section id="sobre">
-            <h2>Sobre Pokémon Emerald</h2>
-            <p>Pokémon Emerald é um jogo de RPG desenvolvido pela Game Freak e publicado pela Nintendo e The Pokémon Company para o Game Boy Advance. É a versão aprimorada de Pokémon Ruby e Sapphire e foi lançado em 2004. O jogo se passa na região de Hoenn e segue o jogador em sua jornada para se tornar um campeão Pokémon, enfrentando a equipe Aqua e a equipe Magma, enquanto interage com os lendários Groudon, Kyogre e Rayquaza.</p>
+        <section id="ginasios">
+            <h2>Ginásios</h2>
+            <div class="gym-list">
+                <div class="gym-card">
+                    <img src="https://www.pokewiki.de/images/d/d6/Emerald_Gym_Leader_Roxanne.png" alt="Roxanne">
+                    <h3>Roxanne</h3>
+                    <p>Tipo: Pedra</p>
+                </div>
+                <div class="gym-card">
+                    <img src="https://www.pokewiki.de/images/3/34/Emerald_Gym_Leader_Brawly.png" alt="Brawly">
+                    <h3>Brawly</h3>
+                    <p>Tipo: Lutador</p>
+                </div>
+                <div class="gym-card">
+                    <img src="https://www.pokewiki.de/images/1/1b/Emerald_Gym_Leader_Wattson.png" alt="Wattson">
+                    <h3>Wattson</h3>
+                    <p>Tipo: Elétrico</p>
+                </div>
+                <div class="gym-card">
+                    <img src="https://www.pokewiki.de/images/b/b1/Emerald_Gym_Leader_Flannery.png" alt="Flannery">
+                    <h3>Flannery</h3>
+                    <p>Tipo: Fogo</p>
+                </div>
+                <div class="gym-card">
+                    <img src="https://www.pokewiki.de/images/a/a7/Emerald_Gym_Leader_Norman.png" alt="Norman">
+                    <h3>Norman</h3>
+                    <p>Tipo: Normal</p>
+                </div>
+                <div class="gym-card">
+                    <img src="https://www.pokewiki.de/images/4/4d/Emerald_Gym_Leader_Crystal.png" alt="Crystal">
+                    <h3>Crystal</h3>
+                    <p>Tipo: Água</p>
+                </div>
+                <div class="gym-card">
+                    <img src="https://www.pokewiki.de/images/3/3b/Emerald_Gym_Leader_Tate_and_Liza.png" alt="Tate e Liza">
+                    <h3>Tate e Liza</h3>
+                    <p>Tipo: Psíquico</p>
+                </div>
+                <div class="gym-card">
+                    <img src="https://www.pokewiki.de/images/b/b0/Emerald_Gym_Leader_Drake.png" alt="Drake">
+                    <h3>Drake</h3>
+                    <p>Tipo: Dragão</p>
+                </div>
+            </div>
         </section>
 
         <section id="curiosidades">
             <h2>Curiosidades</h2>
             <ul>
-                <li>Pokémon Emerald é considerado o jogo mais completo da terceira geração.</li>
-                <li>Ele introduziu o sistema de Battle Frontier, um novo modo de combate.</li>
-                <li>Groudon e Kyogre representam a terra e o mar, respectivamente.</li>
-                <li>Rayquaza pode ser capturado após a história principal, no Sky Pillar.</li>
-                <li>O jogo contém muitos segredos e áreas escondidas, como a cave do Mew.</li>
+                <li>Pokémon Emerald é a versão definitiva dos jogos de Hoenn, adicionando elementos do anime.</li>
+                <li>O jogo introduz a Battle Frontier, uma nova área para batalhas desafiadoras.</li>
+                <li>Rayquaza pode ser encontrado na Sky Pillar, um local icônico do jogo.</li>
+                <li>O jogo é conhecido por seu enredo envolvente e gráficos melhorados em comparação a Ruby e Sapphire.</li>
+                <li>Groudon e Kyogre são representações dos elementos Terra e Água, respectivamente.</li>
             </ul>
-        </section>
-
-        <section id="ginasios">
-            <h2>Ginasios de Hoenn</h2>
-            <div class="gym-list">
-                <div class="gym-card">
-                    <img src="https://img.pokemondb.net/sprites/home/normal/roxanne.png" alt="Roxanne">
-                    <h3>Roxanne</h3>
-                    <p>Tipo: Rocha</p>
-                    <p>Localização: Cidade de Rustboro</p>
-                </div>
-                <div class="gym-card">
-                    <img src="https://img.pokemondb.net/sprites/home/normal/brawly.png" alt="Brawly">
-                    <h3>Brawly</h3>
-                    <p>Tipo: Lutador</p>
-                    <p>Localização: Cidade de Dewford</p>
-                </div>
-                <div class="gym-card">
-                    <img src="https://img.pokemondb.net/sprites/home/normal/winona.png" alt="Winona">
-                    <h3>Winona</h3>
-                    <p>Tipo: Voador</p>
-                    <p>Localização: Cidade de Fortree</p>
-                </div>
-                <div class="gym-card">
-                    <img src="https://img.pokemondb.net/sprites/home/normal/flannery.png" alt="Flannery">
-                    <h3>Flannery</h3>
-                    <p>Tipo: Fogo</p>
-                    <p>Localização: Cidade de Lavaridge</p>
-                </div>
-                <div class="gym-card">
-                    <img src="https://img.pokemondb.net/sprites/home/normal/norman.png" alt="Norman">
-                    <h3>Norman</h3>
-                    <p>Tipo: Normal</p>
-                    <p>Localização: Cidade de Petalburg</p>
-                </div>
-            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Pokémon. Todos os direitos reservados.</p>
+        <p>&copy; 2023 Pokémon Emerald</p>
     </footer>
 </body>
 </html>
