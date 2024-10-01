@@ -50,13 +50,11 @@
             padding: 10px;
             width: 200px;
             text-align: center;
-            transition: 0,3s;
-            height: auto;
-            width: 100%;
         }
         .pokemon-card img, .gym-card img {
             width: 15%;
-            height: auto; /* Suaviza a transição */
+            height: auto;
+            transition: transform 0.3s; /* Suaviza a transição */
         }
         .pokemon-card img:hover, .gym-card img:hover {
             transform: scale(1.1); /* Aumenta a imagem para 110% do tamanho original */
