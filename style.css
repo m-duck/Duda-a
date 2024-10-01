@@ -1,69 +1,119 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f8ff;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Emerald</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/pt/e/e5/Pokémon_Emerald_logo.png" alt="Pokémon Emerald Logo">
+        <nav>
+            <ul>
+                <li><a href="#pokemons">Pokémons</a></li>
+                <li><a href="#trio-lendario">Trio Lendário</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#curiosidades">Curiosidades</a></li>
+                <li><a href="#ginasios">Ginasios</a></li>
+            </ul>
+        </nav>
+    </header>
 
-header {
-    background-color: #ffcc00;
-    text-align: center;
-    padding: 20px;
-}
+    <main>
+        <section id="pokemons">
+            <h2>Pokémons</h2>
+            <div class="pokemon-list">
+                <!-- Cards de Pokémon -->
+                <div class="pokemon-card">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/treecko.png" alt="Treecko">
+                    <h3>Treecko</h3>
+                    <p>Tipo: Grama</p>
+                    <p>Altura: 0.5m</p>
+                    <p>Peso: 5.0kg</p>
+                </div>
+                <!-- Adicione os outros Pokémon aqui -->
+                <!-- ... -->
+            </div>
+        </section>
 
-header img {
-    width: 200px;
-}
+        <section id="trio-lendario">
+            <h2>Trio Lendário</h2>
+            <div class="legendary-list">
+                <!-- Cards dos Pokémon Lendários -->
+                <div class="pokemon-card">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/groudon.png" alt="Groudon">
+                    <h3>Groudon</h3>
+                    <p>Tipo: Terra</p>
+                    <p>Altura: 3.5m</p>
+                    <p>Peso: 950.0kg</p>
+                </div>
+                <!-- Adicione os outros lendários aqui -->
+                <!-- ... -->
+            </div>
+        </section>
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
+        <section id="sobre">
+            <h2>Sobre Pokémon Emerald</h2>
+            <p>Pokémon Emerald é um jogo de RPG desenvolvido pela Game Freak e publicado pela Nintendo e The Pokémon Company para o Game Boy Advance. É a versão aprimorada de Pokémon Ruby e Sapphire e foi lançado em 2004. O jogo se passa na região de Hoenn e segue o jogador em sua jornada para se tornar um campeão Pokémon, enfrentando a equipe Aqua e a equipe Magma, enquanto interage com os lendários Groudon, Kyogre e Rayquaza.</p>
+        </section>
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
+        <section id="curiosidades">
+            <h2>Curiosidades</h2>
+            <ul>
+                <li>Pokémon Emerald é considerado o jogo mais completo da terceira geração.</li>
+                <li>Ele introduziu o sistema de Battle Frontier, um novo modo de combate.</li>
+                <li>Groudon e Kyogre são conhecidos como os Pokémon que representam a terra e o mar, respectivamente.</li>
+                <li>Rayquaza pode ser capturado após a história principal, no Sky Pillar.</li>
+                <li>O jogo contém muitos segredos e áreas escondidas, como a cave do Mew.</li>
+            </ul>
+        </section>
 
-nav a {
-    text-decoration: none;
-    color: #000;
-}
+        <section id="ginasios">
+            <h2>Ginasios de Hoenn</h2>
+            <div class="gym-list">
+                <div class="gym-card">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/roxanne.png" alt="Roxanne">
+                    <h3>Roxanne</h3>
+                    <p>Tipo: Rocha</p>
+                    <p>Localização: Cidade de Rustboro</p>
+                </div>
+                <div class="gym-card">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/brawly.png" alt="Brawly">
+                    <h3>Brawly</h3>
+                    <p>Tipo: Lutador</p>
+                    <p>Localização: Cidade de Dewford</p>
+                </div>
+                <div class="gym-card">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/winona.png" alt="Winona">
+                    <h3>Winona</h3>
+                    <p>Tipo: Voador</p>
+                    <p>Localização: Cidade de Fortree</p>
+                </div>
+                <div class="gym-card">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/flannery.png" alt="Flannery">
+                    <h3>Flannery</h3>
+                    <p>Tipo: Fogo</p>
+                    <p>Localização: Cidade de Lavaridge</p>
+                </div>
+                <div class="gym-card">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/norman.png" alt="Norman">
+                    <h3>Norman</h3>
+                    <p>Tipo: Normal</p>
+                    <p>Localização: Cidade de Petalburg</p>
+                </div>
+                <div class="gym-card">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/sabrina.png" alt="Sabrina">
+                    <h3>Sabrina</h3>
+                    <p>Tipo: Psíquico</p>
+                    <p>Localização: Cidade de Sootopolis</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-main {
-    padding: 20px;
-}
-
-h2 {
-    color: #007bff;
-}
-
-.pokemon-list, .legendary-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.pokemon-card {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    background-color: #fff;
-    width: 150px;
-}
-
-.pokemon-card img {
-    width: 100px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #ffcc00;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
+    <footer>
+        <p>&copy; 2024 Pokémon. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
