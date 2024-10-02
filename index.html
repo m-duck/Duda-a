@@ -36,6 +36,16 @@
         h2 {
             color: #0070bb;
         }
+        .audio-container {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            padding: 10px;
+            margin: 20px auto;
+            width: fit-content;
+            text-align: center;
+        }
         .pokemon-list, .gym-list {
             display: flex;
             flex-wrap: wrap;
@@ -76,10 +86,12 @@
 <body>
     <header>
         <body>
-            <audio controls loop>
-                <source src="1-01 Departure From the Hoenn Region.mp3" type="audio/mpeg">
-            </audio>
-        <img src="pokemon.png" alt="pokemon logo" width="45%">
+            <div class="audio-container">
+                <audio controls loop>
+                    <source src="1-01 Departure From the Hoenn Region.mp3" type="audio/mpeg">
+                    Seu navegador não suporta a tag audio.
+                </audio>
+            </div>
         <nav>
             <ul>
                 <li><a href="#pokemons">Pokémons</a></li>
