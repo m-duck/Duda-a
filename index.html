@@ -37,14 +37,15 @@
             color: #0070bb;
         }
         audio {
-            display: block;
-        }
+    display: block;
+}
         .audio-container {
             background-color: white; /* Cor branca */
             padding: 10px;
             position: absolute; /* Para posicionar */
             top: 4800px; /* Ajuste conforme necessário */
             right: 5px; /* Ajuste conforme necessário */
+            left: ;
         }
         .pokemon-list, .gym-list {
             display: flex;
@@ -67,7 +68,7 @@
             transition: transform 0.2s; /* Suaviza a transição */
         }
         .pokemon-card img:hover, .gym-card img:hover {
-            transform: scale(1.1); /* Aumenta a imagem para 110% do tamanho original */
+            transform: scale(2.1); /* Aumenta a imagem para 110% do tamanho original */
         }
         footer {
             text-align: center;
@@ -77,41 +78,44 @@
             padding: 10px 0;
         }
         .roxanne {
-            size: 80%;
-        }
-        .tipo-card {
-            background: white;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-            margin: 10px;
-            padding: 10px;
-            width: 200px;
-            text-align: center;
-            display: inline-block;
-        }
-        .tipo-card img {
-            width: 50%;
-            height: auto;
-            transition: transform 0.2s;
-        }
-        .tipo-card img:hover {
-            transform: scale(1.1);
-        }
-        .fogo {
-            width: 100px;
-            height: 100px;
-        }
+    size: 80%;
+}
+.tipo-card {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+}
+.tipo-card img {
+    width: 50%;
+    height: auto;
+    transition: transform 0.2s;
+}
+.tipo-card img:hover {
+    transform: scale(1.1);
+}
+.fogo{
+    width: 100px; ;
+    height: 100px;
+}
+    </style>
+</head>
     </style>
 </head>
 <body>
     <header>
-        <img src="pokemon.png" alt="logo" width="35%" sizes="50%">
-        <div class="audio-container">
-            <audio controls autoplay loop>
-                <source src="1-01 Departure From the Hoenn Region.mp3" type="audio/mpeg">
-            </audio>
-        </div>
+        <body>
+            <img src="pokemon.png" alt="logo" width="35%" sizes="50%">
+            <div class="audio-container">
+                <audio controls autoplay loop>
+                    <source src="1-01 Departure From the Hoenn Region.mp3" type="audio/mpeg">
+                </audio>
+            </div>
         <nav>
             <ul>
                 <li><a href="#pokemons">Pokémons</a></li>
@@ -126,6 +130,15 @@
     <main>
         <section id="pokemons">
             <h2>Pokémons</h2>
+            <body>               
+                <script>
+                    function openModal() {
+                        document.getElementById("myModal").style.display = "block";
+                    }
+                    function closeModal() {
+                        document.getElementById("myModal").style.display = "none";
+                    }
+                </script>
             <div class="pokemon-list">
                 <div class="pokemon-card">
                     <img src="e80249cec539531.png" alt="Treecko">
@@ -171,7 +184,7 @@
                 </div>
                 <div class="pokemon-card">
                     <img src="Mudkip.png" alt="Mudkip">
-                    <h3>Mudkip</h3>
+                    <p>Mudkip</p>
                     <p>Tipo: Água</p>
                     <p>Altura: 0.4m</p>
                     <p>Peso: 7.6kg</p>
@@ -233,10 +246,10 @@
                     <p>Peso: 10.0kg</p>
                 </div>
                 <div class="pokemon-card">
-                    <img src="Beautifly.webp" alt="Beautifly">
+                    <img src="b.webp" alt="Beautifly">
                     <h3>Beautifly</h3>
                     <p>Tipo: Inseto/Voador</p>
-                    <p>Altura: 1.0m</p>
+                    <p>Altura: 1.1m</p>
                     <p>Peso: 28.4kg</p>
                 </div>
                 <div class="pokemon-card">
@@ -249,124 +262,265 @@
                 <div class="pokemon-card">
                     <img src="Dustox.webp" alt="Dustox">
                     <h3>Dustox</h3>
-                    <p>Tipo: Inseto/Voador</p>
+                    <p>Tipo: Inseto/Venenoso</p>
                     <p>Altura: 1.2m</p>
                     <p>Peso: 31.6kg</p>
                 </div>
+                <div class="pokemon-card">
+                    <img src="Lotad.webp" alt="Lotad">
+                    <h3>Lotad</h3>
+                    <p>Tipo: Água/Grama</p>
+                    <p>Altura: 0.6m</p>
+                    <p>Peso: 2.6kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="Lombre.webp" alt="Lombre">
+                    <h3>Lombre</h3>
+                    <p>Tipo: Água/Grama</p>
+                    <p>Altura: 1.2m</p>
+                    <p>Peso: 32.5kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="Ludicolo.webp" alt="Ludicolo">
+                    <h3>Ludicolo</h3>
+                    <p>Tipo: Água/Grama</p>
+                    <p>Altura: 1.5m</p>
+                    <p>Peso: 55.0kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="Seedot.webp" alt="Seedot">
+                    <h3>Seedot</h3>
+                    <p>Tipo: Grama</p>
+                    <p>Altura: 0.4m</p>
+                    <p>Peso: 4.0kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="Nuzleaf.webp" alt="Nuzleaf">
+                    <h3>Nuzleaf</h3>
+                    <p>Tipo: Grama/Sombrio</p>
+                    <p>Altura: 1.0m</p>
+                    <p>Peso: 28.0kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="shiftry.png" alt="Shiftry">
+                    <h3>Shiftry</h3>
+                    <p>Tipo: Grama/Sombrio</p>
+                    <p>Altura: 1.3m</p>
+                    <p>Peso: 28.4kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="taillow.png" alt="Taillow">
+                    <h3>Taillow</h3>
+                    <p>Tipo: Normal/Voador</p>
+                    <p>Altura: 0,3 m </p>
+                    <p>Peso: 2,3 kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="Swellow.webp" alt="Swellow">
+                    <h3>Swellow</h3>
+                    <p>Tipo: Normal/Voador</p>
+                    <p>Altura: 0.8m</p>
+                    <p>Peso: 19.8kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="Wingull.webp" alt="Wingull">
+                    <h3>Wingull</h3>
+                    <p>Tipo: Água/Voador</p>
+                    <p>Altura: 0.6m</p>
+                    <p>Peso: 9.5kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="Pelipper.webp" alt="Pelipper">
+                    <h3>Pelipper</h3>
+                    <p>Tipo: Água/Voador</p>
+                    <p>Altura: 1.2m</p>
+                    <p>Peso: 28.0kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="Ralts.webp" alt="Ralts">
+                    <h3>Ralts</h3>
+                    <p>Tipo: Psíquico/Fada</p>
+                    <p>Altura: o.4m</p>
+                    <p>Peso: 6.6kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="Kirlia.webp" alt="Kirlia">
+                    <h3>Kirlia</h3>
+                    <p>Tipo: Psíquico/Fada</p>
+                    <p>Altura: 0,8m</p>
+                    <p>Peso: 20.2</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="Gardevoir-removebg-preview.png" alt="Gardevoir">
+                    <h3>Gardevoir</h3>
+                    <p>Tipo: Psíquico/Fada</p>
+                    <p>Altura: 1.6m</p>
+                    <p>Peso: 48.4kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="Surskit.webp" alt="Surskit">
+                    <h3>Surskit</h3>
+                    <p>Tipo: Inseto/Água</p>
+                    <p>Altura: 0.5m</p>
+                    <p>Peso: 1.7kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="Masquerain.webp" alt="Masquerain">
+                    <h3>Masquerain</h3>
+                    <p>Tipo: Inseto/Voador</p>
+                    <p>Altura: 0.8m</p>
+                    <p>Peso: 3.6kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="Shroomish.webp" alt="Shroomish">
+                    <h3>Shroomish</h3>
+                    <p>Tipo: Grama</p>
+                    <p>Altura: 0.4m</p>
+                    <p>Peso: 4.5kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="Breloom.webp" alt="Breloom">
+                    <h3>Breloom</h3>
+                    <p>Tipo: Grama/Lutador</p>
+                    <p>Altura: 1.2m</p>
+                    <p>Peso: 39.2kg</p>
+                </div>
             </div>
         </section>
+
         <section id="trio-lendario">
             <h2>Trio Lendário</h2>
-            <p>O trio lendário de Hoenn é formado por:</p>
-            <ul>
-                <li><strong>Groudon:</strong> Pokémon do tipo Terra.</li>
-                <li><strong>Kyogre:</strong> Pokémon do tipo Água.</li>
-                <li><strong>Rayquaza:</strong> Pokémon do tipo Dragão/Voador.</li>
-            </ul>
-        </section>
-        <section id="lideres-de-ginasios">
-            <h2>Líderes de Ginásios</h2>
-            <div class="gym-list">
-                <div class="gym-card">
-                    <h3>Roxanne</h3>
-                    <img class="roxanne" src="roxanne.png" alt="Roxanne">
-                    <p>Tipo: Pedra</p>
+            <div class="pokemon-list">
+                <div class="pokemon-card">
+                    <img src="Groudon.webp" alt="Groudon">
+                    <h3>Groudon</h3>
+                    <p>Tipo: Terra</p>
+                    <p>Altura: 3.0m</p>
+                    <p>Peso: 950.0kg</p>
                 </div>
-                <div class="gym-card">
-                    <h3>Brawly</h3>
-                    <img class="roxanne" src="brawly.png" alt="Brawly">
-                    <p>Tipo: Lutador</p>
-                </div>
-                <div class="gym-card">
-                    <h3>Wattson</h3>
-                    <img class="roxanne" src="wattson.png" alt="Wattson">
-                    <p>Tipo: Elétrico</p>
-                </div>
-                <div class="gym-card">
-                    <h3>Flannery</h3>
-                    <img class="roxanne" src="flannery.png" alt="Flannery">
-                    <p>Tipo: Fogo</p>
-                </div>
-                <div class="gym-card">
-                    <h3>Norman</h3>
-                    <img class="roxanne" src="norman.png" alt="Norman">
-                    <p>Tipo: Normal</p>
-                </div>
-                <div class="gym-card">
-                    <h3>Winona</h3>
-                    <img class="roxanne" src="winona.png" alt="Winona">
-                    <p>Tipo: Voador</p>
-                </div>
-                <div class="gym-card">
-                    <h3>Tate e Liza</h3>
-                    <img class="roxanne" src="tate_liza.png" alt="Tate e Liza">
-                    <p>Tipo: Psíquico</p>
-                </div>
-                <div class="gym-card">
-                    <h3>Wallace</h3>
-                    <img class="roxanne" src="wallace.png" alt="Wallace">
+                <div class="pokemon-card">
+                    <img src="kay kay.gif" alt="Kyogre">
+                    <h3>Kyogre</h3>
                     <p>Tipo: Água</p>
+                    <p>Altura: 4.5m</p>
+                    <p>Peso: 352.0kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="rayquaza.gif" alt="Rayquaza">
+                    <h3>Rayquaza</h3>
+                    <p>Tipo: Dragão/Voador</p>
+                    <p>Altura: 7.0m</p>
+                    <p>Peso: 206.5kg</p>
                 </div>
             </div>
-        </section>
-        <section id="curiosidades">
-            <h2>Curiosidades</h2>
-            <ul>
-                <li>Pokémon Emerald é a versão definitiva da região de Hoenn.</li>
-                <li>Ele introduziu o Battle Frontier, um novo desafio para os treinadores.</li>
-                <li>O jogo tem uma narrativa envolvendo a luta entre Groudon e Kyogre.</li>
-            </ul>
-        </section>
-        <section id="sinopse">
-            <h2>Sinopse</h2>
-            <p>Pokémon Emerald se passa na região de Hoenn, onde os jogadores assumem o papel de um treinador Pokémon. O objetivo é derrotar os líderes de ginásio e se tornar o Campeão da Liga Pokémon, enquanto se envolve em uma história épica envolvendo os lendários Groudon, Kyogre e Rayquaza.</p>
         </section>
         <section id="tipos-de-pokemon">
             <h2>Tipos de Pokémon</h2>
-            <div class="tipo-card">
-                <h3>Fogo</h3>
-                <img class="fogo" src="fogo.png" alt="Fogo">
-            </div>
-            <div class="tipo-card">
-                <h3>Água</h3>
-                <img class="fogo" src="agua.png" alt="Água">
-            </div>
-            <div class="tipo-card">
-                <h3>Grama</h3>
-                <img class="fogo" src="grama.png" alt="Grama">
-            </div>
-            <div class="tipo-card">
-                <h3>Elétrico</h3>
-                <img class="fogo" src="eletrico.png" alt="Elétrico">
-            </div>
-            <div class="tipo-card">
-                <h3>Terra</h3>
-                <img class="fogo" src="terra.png" alt="Terra">
-            </div>
-            <div class="tipo-card">
-                <h3>Normal</h3>
-                <img class="fogo" src="normal.png" alt="Normal">
-            </div>
-            <div class="tipo-card">
-                <h3>Voador</h3>
-                <img class="fogo" src="voador.png" alt="Voador">
-            </div>
-            <div class="tipo-card">
-                <h3>Inseto</h3>
-                <img class="fogo" src="inseto.png" alt="Inseto">
-            </div>
-            <div class="tipo-card">
-                <h3>Sombrio</h3>
-                <img class="fogo" src="sombrio.png" alt="Sombrio">
-            </div>
-            <div class="tipo-card">
-                <h3>Psíquico</h3>
-                <img class="fogo" src="psiquico.png" alt="Psíquico">
+            <p>Os Pokémon são classificados em diferentes tipos, cada um com suas próprias características e vantagens em batalha.</p>
+            <div class="tipo-list">
+                <div class="tipo-card">
+                    <img src="planta.webp" alt="Tipo Grama">
+                    <h3>Grama</h3>
+                    <p>Fraco contra: Fogo, Inseto, Voador</p>
+                    <p>Forte contra: Água, Terra, Rocha</p>
+                </div>
+                <div class="tipo-card">
+                    <img src="Fogo.webp" alt="Tipo Fogo" class="Fogo">
+                    <h3>Fogo</h3>
+                    <p>Fraco contra: Água, Terra</p>
+                    <p>Forte contra: Grama, Inseto, Gelo</p>
+                </div>
+                <div class="tipo-card">
+                    <img src="agua.jpg" alt="Tipo Água">
+                    <h3>Água</h3>
+                    <p>Fraco contra: Elétrico, Grama</p>
+                    <p>Forte contra: Fogo, Terra, Rocha</p>
+                </div>
             </div>
         </section>
+        
+        
+        <section id="lideres-de-ginasios"></section>
+            <h2>Líderes de Ginásios</h2>
+            <div class="gym-list">
+                <div class="gym-card">
+                    <img src="ORASArt_Roxanne.webp" alt="Ginásio Rustboro" class="roxane">
+                    <h3>Líder: Roxanne</h3>
+                    <p>Ginásio Rustboro</p>
+                    <p>Tipo: Pedra</p>
+                </div>
+                <div class="gym-card">
+                    <img src="Brawly.webp" alt="Ginásio Dewford">
+                    <h3>Líder: Brawly</h3>
+                    <p>Ginásio Dewford</p>
+                    <p>Tipo: Lutador</p>
+                </div>
+                <div class="gym-card">
+                    <img src="Wattson.webp" alt="Ginásio Mauville">
+                    <h3>Líder: Wattson</h3>
+                    <p>Ginásio Mauvil</p>
+                    <p>Tipo: Elétrico</p>
+                </div>
+                <div class="gym-card">
+                    <img src="Flannery.webp" alt="Ginásio Lavaridge">
+                    <h3>Líder: Flannery</h3>
+                    <p>Ginásio Lavaridge</p>
+                    <p>Tipo: Fogo</p>
+                </div>
+                <div class="gym-card">
+                    <img src="images-removebg-preview.png" alt="Ginásio Fallabor" class="Norman">
+                    <h3>Líder: Norman</h3>
+                    <p>Ginásio Fallabor</p>
+                    <p>Tipo: Normal</p>
+                </div>
+                <div class="gym-card">
+                    <img src="Wallace-removebg-preview.png" alt="Ginásio Sootopolis">
+                    <h3>Líder: Wallace</h3>
+                    <p>Ginásio Sootopolis</p>
+                    <p>Tipo: Água</p>
+                </div>
+                <div class="gym-card">
+                    <img src="Sidney-removebg-preview.png" alt="Ginásio Evergrande">
+                    <h3>Ginásio Evergrande</h3>
+                    <p>Líder: Sidney</p>
+                    <p>Tipo: Sombrio</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="curiosidades">
+            <h2>Curiosidades</h2>
+            <ul>
+                <li>Pokémon Emerald é a versão melhorada de Ruby e Sapphire.</li>
+                <li>O jogo introduziu o sistema de Pokémon Contests.</li>
+                <li>Groudon e Kyogre são considerados as representações da terra e do mar, respectivamente.</li>
+                <li>Rayquaza é o mediador entre Groudon e Kyogre.</li>
+                <li>O jogo apresenta a Battle Frontier, uma nova instalação de batalha.</li>
+                <li>Emerald permite ao jogador capturar todos os Pokémon lendários da geração.</li>
+                <li>O personagem principal é conhecido como May ou Brendan, dependendo da escolha do jogador.</li>
+            </ul>
+        </section>
     </main>
-    <footer>
-        <p>© 2024 Pokémon Emerald. Todos os direitos reservados.</p>
-    </footer>
+
+    <section id="sinopse">
+        <h2>Sinopse</h2>
+        <p>Pokémon Emerald é um RPG de aventura que leva os jogadores ao mundo de Hoenn, onde eles assumem o papel de um treinador Pokémon. O objetivo principal é derrotar a Elite Four e se tornar o Campeão da Liga Pokémon. Ao longo da jornada, os jogadores se deparam com diversas rotas, ginásios e, é claro, uma variedade de Pokémon para capturar.</p>
+        <p>A história se desenrola com a rivalidade entre Groudon e Kyogre, duas poderosas criaturas lendárias que representam a terra e o mar. Rayquaza, outra lendária, atua como mediador entre eles. Além de batalhas e captura de Pokémon, o jogo introduz novas mecânicas como as Pokémon Contests, onde os jogadores podem competir em beleza e estilo.</p>
+        <p>Os jogadores também têm a oportunidade de explorar a Battle Frontier, um local onde eles podem desafiar novos desafios e se testar em batalhas únicas. Pokémon Emerald oferece uma experiência rica e envolvente, expandindo o universo Pokémon de formas emocionantes.</p>
+    </section>
+    <img src="running-pikachu-transparent-snivee.gif" alt="pikachu" width="25%">
+</main>
+
+
+<footer>
+    <p>&copy; 2024 site feito por Anthonny</p>
+    <nav>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </nav>
+</footer>
 </body>
 </html>
