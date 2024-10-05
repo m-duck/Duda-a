@@ -522,5 +522,23 @@
         </ul>
     </nav>
 </footer>
+<script>
+    function filterPokemons() {
+        const searchInput = document.getElementById('search').value.toLowerCase();
+        const pokemonList = document.getElementById('pokemonList');
+        const pokemonCards = pokemonList.getElementsByClassName('pokemon-card');
+
+        for (let i = 0; i < pokemonCards.length; i++) {
+            const pokemonName = pokemonCards[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
+            if (pokemonName.includes(searchInput)) {
+                pokemonCards[i].style.display = 'block';
+            } else {
+                pokemonCards[i].style.display = 'none';
+            }
+        }
+    }
+</script>
+</body>
+</html>
 </body>
 </html>
