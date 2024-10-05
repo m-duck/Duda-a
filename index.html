@@ -36,15 +36,16 @@
         h2 {
             color: #0070bb;
         }
-        audio {
-            display: block;
-        }
         .audio-container {
             background-color: white;
             padding: 10px;
-            position: absolute;
-            top: 4800px;
-            right: 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            margin-top: 10px;
+        }
+        audio {
+            display: block;
         }
         .pokemon-list, .gym-list {
             display: flex;
@@ -84,6 +85,7 @@
         <div class="audio-container">
             <audio controls autoplay loop>
                 <source src="1-01 Departure From the Hoenn Region.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
             </audio>
         </div>
         <nav>
@@ -116,7 +118,56 @@
                     <p>Altura: 0.9m</p>
                     <p>Peso: 21.6kg</p>
                 </div>
-                <!-- Adicione os outros Pokémons aqui da mesma forma -->
+                <div class="pokemon-card">
+                    <img src="Sceptile.png" alt="Sceptile">
+                    <h3>Sceptile</h3>
+                    <p>Tipo: Grama</p>
+                    <p>Altura: 1.7m</p>
+                    <p>Peso: 52.2kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="Mudkip.png" alt="Mudkip">
+                    <h3>Mudkip</h3>
+                    <p>Tipo: Água</p>
+                    <p>Altura: 0.6m</p>
+                    <p>Peso: 7.6kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="Marshtomp.png" alt="Marshtomp">
+                    <h3>Marshtomp</h3>
+                    <p>Tipo: Água/Terra</p>
+                    <p>Altura: 0.9m</p>
+                    <p>Peso: 28.0kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="Swampert.png" alt="Swampert">
+                    <h3>Swampert</h3>
+                    <p>Tipo: Água/Terra</p>
+                    <p>Altura: 1.5m</p>
+                    <p>Peso: 81.9kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="Torchic.png" alt="Torchic">
+                    <h3>Torchic</h3>
+                    <p>Tipo: Fogo</p>
+                    <p>Altura: 0.4m</p>
+                    <p>Peso: 2.5kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="Combusken.png" alt="Combusken">
+                    <h3>Combusken</h3>
+                    <p>Tipo: Fogo/Lutador</p>
+                    <p>Altura: 0.9m</p>
+                    <p>Peso: 19.5kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="Blaziken.png" alt="Blaziken">
+                    <h3>Blaziken</h3>
+                    <p>Tipo: Fogo/Lutador</p>
+                    <p>Altura: 1.9m</p>
+                    <p>Peso: 52.0kg</p>
+                </div>
+                <!-- Adicione outros Pokémons aqui da mesma forma -->
             </div>
         </section>
 
@@ -161,14 +212,21 @@
                     <img src="Fogo.webp" alt="Tipo Fogo">
                     <h3>Fogo</h3>
                     <p>Fraco contra: Água, Terra</p>
-                    <p>Forte contra: Grama, Inseto, Gelo</p>
+                    <p>Forte contra: Grama, Inseto, Aço</p>
                 </div>
                 <div class="tipo-card">
-                    <img src="agua.jpg" alt="Tipo Água">
+                    <img src="agua.webp" alt="Tipo Água">
                     <h3>Água</h3>
                     <p>Fraco contra: Elétrico, Grama</p>
                     <p>Forte contra: Fogo, Terra, Rocha</p>
                 </div>
+                <div class="tipo-card">
+                    <img src="luta.webp" alt="Tipo Lutador">
+                    <h3>Lutador</h3>
+                    <p>Fraco contra: Psíquico, Voador, Fada</p>
+                    <p>Forte contra: Normal, Gelo, Rocha</p>
+                </div>
+                <!-- Adicione outros tipos aqui -->
             </div>
         </section>
 
@@ -176,38 +234,65 @@
             <h2>Líderes de Ginásios</h2>
             <div class="gym-list">
                 <div class="gym-card">
-                    <img src="ORASArt_Roxanne.webp" alt="Ginásio Rustboro" class="roxane">
-                    <h3>Líder: Roxanne</h3>
-                    <p>Ginásio Rustboro</p>
-                    <p>Tipo: Pedra</p>
+                    <img src="roxanne.png" alt="Roxanne">
+                    <h3>Roxanne</h3>
+                    <p>Tipo: Rocha</p>
+                    <p>Local: Cidade de Rustboro</p>
                 </div>
                 <div class="gym-card">
-                    <img src="Brawly.webp" alt="Ginásio Dewford">
-                    <h3>Líder: Brawly</h3>
-                    <p>Ginásio Dewford</p>
+                    <img src="brawly.png" alt="Brawly">
+                    <h3>Brawly</h3>
                     <p>Tipo: Lutador</p>
+                    <p>Local: Cidade de Dewford</p>
                 </div>
-                <!-- Adicione os outros líderes de ginásios aqui da mesma forma -->
+                <div class="gym-card">
+                    <img src="norman.png" alt="Norman">
+                    <h3>Norman</h3>
+                    <p>Tipo: Normal</p>
+                    <p>Local: Cidade de Mauville</p>
+                </div>
+                <div class="gym-card">
+                    <img src="wattson.png" alt="Wattson">
+                    <h3>Wattson</h3>
+                    <p>Tipo: Elétrico</p>
+                    <p>Local: Cidade de Mauville</p>
+                </div>
+                <div class="gym-card">
+                    <img src="flannery.png" alt="Flannery">
+                    <h3>Flannery</h3>
+                    <p>Tipo: Fogo</p>
+                    <p>Local: Cidade de Lavaridge</p>
+                </div>
+                <div class="gym-card">
+                    <img src="winona.png" alt="Winona">
+                    <h3>Winona</h3>
+                    <p>Tipo: Voador</p>
+                    <p>Local: Cidade de Fortree</p>
+                </div>
+                <div class="gym-card">
+                    <img src="tate.png" alt="Tate e Liza">
+                    <h3>Tate e Liza</h3>
+                    <p>Tipo: Psíquico</p>
+                    <p>Local: Cidade de Mossdeep</p>
+                </div>
+                <div class="gym-card">
+                    <img src="wallace.png" alt="Wallace">
+                    <h3>Wallace</h3>
+                    <p>Tipo: Água</p>
+                    <p>Local: Cidade de Sootopolis</p>
+                </div>
+                <!-- Adicione outros líderes aqui -->
             </div>
         </section>
 
         <section id="curiosidades">
             <h2>Curiosidades</h2>
-            <ul>
-                <li>Pokémon Emerald é a versão melhorada de Ruby e Sapphire.</li>
-                <li>O jogo introduziu o sistema de Pokémon Contests.</li>
-                <li>Groudon e Kyogre são considerados as representações da terra e do mar, respectivamente.</li>
-                <li>Rayquaza é o mediador entre Groudon e Kyogre.</li>
-                <li>O jogo apresenta a Battle Frontier, uma nova instalação de batalha.</li>
-                <li>Emerald permite ao jogador capturar todos os Pokémon lendários da geração.</li>
-                <li>O personagem principal é conhecido como May ou Brendan, dependendo da escolha do jogador.</li>
-            </ul>
+            <p>Pokémon Emerald é a versão aprimorada de Pokémon Ruby e Sapphire e apresenta uma história rica com personagens interessantes e eventos lendários.</p>
         </section>
 
         <section id="sinopse">
             <h2>Sinopse</h2>
-            <p>Pokémon Emerald é um RPG de aventura que leva os jogadores ao mundo de Hoenn, onde eles assumem o papel de um treinador Pokémon. O objetivo principal é derrotar a Elite Four e se tornar o Campeão da Liga Pokémon. Ao longo da jornada, os jogadores se deparam com diversas rotas, ginásios e, é claro, uma variedade de Pokémon para capturar.</p>
-            <p>A história se desenrola com a rivalidade entre Groudon e Kyogre, e a intervenção de Rayquaza. O jogo também apresenta a Team Aqua e a Team Magma, que têm seus próprios planos para o mundo.</p>
+            <p>O jogo segue o jogador na sua jornada para se tornar um Mestre Pokémon enquanto enfrenta a Team Aqua e a Team Magma, e a intervenção de Rayquaza. O jogo também apresenta a Team Aqua e a Team Magma, que têm seus próprios planos para o mundo.</p>
         </section>
     </main>
 
