@@ -36,23 +36,23 @@
         h2 {
             color: #0070bb;
         }
-        .audio-container {
-            background-color: white;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: inline-block;
-            margin-top: 10px;
-        }
         audio {
-            display: block;
+    display: block;
+}
+        .audio-container {
+            background-color: white; /* Cor branca */
+            padding: 10px;
+            position: absolute; /* Para posicionar */
+            top: 4800px; /* Ajuste conforme necessário */
+            right: 5px; /* Ajuste conforme necessário */
+            left: ;
         }
         .pokemon-list, .gym-list {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
         }
-        .pokemon-card, .gym-card, .tipo-card {
+        .pokemon-card, .gym-card {
             background: white;
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -62,13 +62,13 @@
             width: 200px;
             text-align: center;
         }
-        .pokemon-card img, .gym-card img, .tipo-card img {
+        .pokemon-card img, .gym-card img {
             width: 40%;
             height: auto;
-            transition: transform 0.2s;
+            transition: transform 0.2s; /* Suaviza a transição */
         }
-        .pokemon-card img:hover, .gym-card img:hover, .tipo-card img:hover {
-            transform: scale(1.1);
+        .pokemon-card img:hover, .gym-card img:hover {
+            transform: scale(2.1); /* Aumenta a imagem para 110% do tamanho original */
         }
         footer {
             text-align: center;
@@ -77,17 +77,45 @@
             color: white;
             padding: 10px 0;
         }
+        .roxanne {
+    size: 80%;
+}
+.tipo-card {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+}
+.tipo-card img {
+    width: 50%;
+    height: auto;
+    transition: transform 0.2s;
+}
+.tipo-card img:hover {
+    transform: scale(1.1);
+}
+.fogo{
+    width: 100px; ;
+    height: 100px;
+}
+    </style>
+</head>
     </style>
 </head>
 <body>
     <header>
-        <img src="pokemon.png" alt="logo" width="35%">
-        <div class="audio-container">
-            <audio controls autoplay loop>
-                <source src="1-01 Departure From the Hoenn Region.mp3" type="audio/mpeg">
-                Seu navegador não suporta o elemento de áudio.
-            </audio>
-        </div>
+        <body>
+            <img src="pokemon.png" alt="logo" width="35%" sizes="50%">
+            <div class="audio-container">
+                <audio controls autoplay loop>
+                    <source src="1-01 Departure From the Hoenn Region.mp3" type="audio/mpeg">
+                </audio>
+            </div>
         <nav>
             <ul>
                 <li><a href="#pokemons">Pokémons</a></li>
@@ -99,10 +127,18 @@
             </ul>
         </nav>
     </header>
-    
     <main>
         <section id="pokemons">
             <h2>Pokémons</h2>
+            <body>               
+                <script>
+                    function openModal() {
+                        document.getElementById("myModal").style.display = "block";
+                    }
+                    function closeModal() {
+                        document.getElementById("myModal").style.display = "none";
+                    }
+                </script>
             <div class="pokemon-list">
                 <div class="pokemon-card">
                     <img src="e80249cec539531.png" alt="Treecko">
@@ -352,9 +388,62 @@
             </div>
         </section>
 
-        <section id="lideres-de-ginasios">
+        <section id="trio-lendario">
+            <h2>Trio Lendário</h2>
+            <div class="pokemon-list">
+                <div class="pokemon-card">
+                    <img src="Groudon.webp" alt="Groudon">
+                    <h3>Groudon</h3>
+                    <p>Tipo: Terra</p>
+                    <p>Altura: 3.0m</p>
+                    <p>Peso: 950.0kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="kay kay.gif" alt="Kyogre">
+                    <h3>Kyogre</h3>
+                    <p>Tipo: Água</p>
+                    <p>Altura: 4.5m</p>
+                    <p>Peso: 352.0kg</p>
+                </div>
+                <div class="pokemon-card">
+                    <img src="rayquaza.gif" alt="Rayquaza">
+                    <h3>Rayquaza</h3>
+                    <p>Tipo: Dragão/Voador</p>
+                    <p>Altura: 7.0m</p>
+                    <p>Peso: 206.5kg</p>
+                </div>
+            </div>
+        </section>
+        <section id="tipos-de-pokemon">
+            <h2>Tipos de Pokémon</h2>
+            <p>Os Pokémon são classificados em diferentes tipos, cada um com suas próprias características e vantagens em batalha.</p>
+            <div class="tipo-list">
+                <div class="tipo-card">
+                    <img src="planta.webp" alt="Tipo Grama">
+                    <h3>Grama</h3>
+                    <p>Fraco contra: Fogo, Inseto, Voador</p>
+                    <p>Forte contra: Água, Terra, Rocha</p>
+                </div>
+                <div class="tipo-card">
+                    <img src="Fogo.webp" alt="Tipo Fogo" class="Fogo">
+                    <h3>Fogo</h3>
+                    <p>Fraco contra: Água, Terra</p>
+                    <p>Forte contra: Grama, Inseto, Gelo</p>
+                </div>
+                <div class="tipo-card">
+                    <img src="agua.jpg" alt="Tipo Água">
+                    <h3>Água</h3>
+                    <p>Fraco contra: Elétrico, Grama</p>
+                    <p>Forte contra: Fogo, Terra, Rocha</p>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="lideres-de-ginasios"></section>
             <h2>Líderes de Ginásios</h2>
             <div class="gym-list">
+                <div class="gym-card">
                     <img src="ORASArt_Roxanne.webp" alt="Ginásio Rustboro" class="roxane">
                     <h3>Líder: Roxanne</h3>
                     <p>Ginásio Rustboro</p>
@@ -395,31 +484,43 @@
                     <h3>Ginásio Evergrande</h3>
                     <p>Líder: Sidney</p>
                     <p>Tipo: Sombrio</p>
-                </div>      
-                <!-- Adicione outros líderes aqui -->
+                </div>
             </div>
         </section>
 
         <section id="curiosidades">
             <h2>Curiosidades</h2>
-            <p>Pokémon Emerald é a versão aprimorada de Pokémon Ruby e Sapphire e apresenta uma história rica com personagens interessantes e eventos lendários.</p>
-        </section>
-
-        <section id="sinopse">
-            <h2>Sinopse</h2>
-            <p>O jogo segue o jogador na sua jornada para se tornar um Mestre Pokémon enquanto enfrenta a Team Aqua e a Team Magma, e a intervenção de Rayquaza. O jogo também apresenta a Team Aqua e a Team Magma, que têm seus próprios planos para o mundo.</p>
+            <ul>
+                <li>Pokémon Emerald é a versão melhorada de Ruby e Sapphire.</li>
+                <li>O jogo introduziu o sistema de Pokémon Contests.</li>
+                <li>Groudon e Kyogre são considerados as representações da terra e do mar, respectivamente.</li>
+                <li>Rayquaza é o mediador entre Groudon e Kyogre.</li>
+                <li>O jogo apresenta a Battle Frontier, uma nova instalação de batalha.</li>
+                <li>Emerald permite ao jogador capturar todos os Pokémon lendários da geração.</li>
+                <li>O personagem principal é conhecido como May ou Brendan, dependendo da escolha do jogador.</li>
+            </ul>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 site feito por Anthonny</p>
-        <nav>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-            </ul>
-        </nav>
-    </footer>
+    <section id="sinopse">
+        <h2>Sinopse</h2>
+        <p>Pokémon Emerald é um RPG de aventura que leva os jogadores ao mundo de Hoenn, onde eles assumem o papel de um treinador Pokémon. O objetivo principal é derrotar a Elite Four e se tornar o Campeão da Liga Pokémon. Ao longo da jornada, os jogadores se deparam com diversas rotas, ginásios e, é claro, uma variedade de Pokémon para capturar.</p>
+        <p>A história se desenrola com a rivalidade entre Groudon e Kyogre, duas poderosas criaturas lendárias que representam a terra e o mar. Rayquaza, outra lendária, atua como mediador entre eles. Além de batalhas e captura de Pokémon, o jogo introduz novas mecânicas como as Pokémon Contests, onde os jogadores podem competir em beleza e estilo.</p>
+        <p>Os jogadores também têm a oportunidade de explorar a Battle Frontier, um local onde eles podem desafiar novos desafios e se testar em batalhas únicas. Pokémon Emerald oferece uma experiência rica e envolvente, expandindo o universo Pokémon de formas emocionantes.</p>
+    </section>
+    <img src="running-pikachu-transparent-snivee.gif" alt="pikachu" width="25%">
+</main>
+
+
+<footer>
+    <p>&copy; 2024 site feito por Anthonny</p>
+    <nav>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </nav>
+</footer>
 </body>
 </html>
