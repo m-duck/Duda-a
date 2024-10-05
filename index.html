@@ -101,6 +101,17 @@ audio {
     width: 100px; ;
     height: 100px;
 }
+}
+        /* Estilo do iframe */
+        .video-container {
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        iframe {
+            width: 100%;
+            height: 450px; /* Ajuste a altura conforme necessário */
+            border: none;
+        }
     </style>
 </head>
     </style>
@@ -126,6 +137,9 @@ audio {
         </nav>
     </header>
     <main>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/wtiNKE4VqOA?autoplay=1&loop=1&playlist=wtiNKE4VqOA" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
         <section id="pokemons">
             <h2>Pokémons</h2>
             <body>               
