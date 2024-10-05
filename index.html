@@ -39,13 +39,11 @@
         audio {
     display: block;
 }
+audio {
+            display: none; /* Esconde a caixa de áudio */
+        }
         .audio-container {
-            background-color: white; /* Cor branca */
-            padding: 10px;
-            position: absolute; /* Para posicionar */
-            top: 4800px; /* Ajuste conforme necessário */
-            right: 5px; /* Ajuste conforme necessário */
-            left: ;
+            display: none; /* Também esconde o contêiner de áudio */
         }
         .pokemon-list, .gym-list {
             display: flex;
@@ -508,7 +506,9 @@
         <p>A história se desenrola com a rivalidade entre Groudon e Kyogre, duas poderosas criaturas lendárias que representam a terra e o mar. Rayquaza, outra lendária, atua como mediador entre eles. Além de batalhas e captura de Pokémon, o jogo introduz novas mecânicas como as Pokémon Contests, onde os jogadores podem competir em beleza e estilo.</p>
         <p>Os jogadores também têm a oportunidade de explorar a Battle Frontier, um local onde eles podem desafiar novos desafios e se testar em batalhas únicas. Pokémon Emerald oferece uma experiência rica e envolvente, expandindo o universo Pokémon de formas emocionantes.</p>
     </section>
-    <img src="running-pikachu-transparent-snivee.gif" alt="pikachu" width="25%">
+    <div class="pokemon-card">
+        <img src="running-pikachu-transparent-snivee.gif" alt="Pikachu" id="pikachu" width="25%" style="cursor: pointer;">
+    </div>
 </main>
 
 
